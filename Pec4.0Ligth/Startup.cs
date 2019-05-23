@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using Pec4_0Ligth.Models;
 
 namespace Pec4._0Ligth
 {
@@ -33,6 +35,9 @@ namespace Pec4._0Ligth
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<Pec4_0LigthContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("Pec4_0LigthContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
