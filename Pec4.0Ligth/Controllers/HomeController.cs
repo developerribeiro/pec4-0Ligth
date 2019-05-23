@@ -17,14 +17,17 @@ namespace Pec4._0Ligth.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
-
+            ViewData["Message"] = "Pec 4.0 Ligth Sistema de Simulação de Evolução de Rebanho";
+            ViewData["Desenvolvedor"] = "Thiago Ribeiro da Silva";
+            ViewData["email"] = "developerribeiro@gmail.com";
+            ViewData["Telefone"] = "(62)98114-5542";
             return View();
         }
 
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
+            
 
             return View();
         }
