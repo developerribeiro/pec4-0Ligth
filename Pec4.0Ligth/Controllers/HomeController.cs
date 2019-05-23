@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Pec4._0Ligth.Models;
+using Pec4._0Ligth.Models.ViewModels;
 
 namespace Pec4._0Ligth.Controllers
 {

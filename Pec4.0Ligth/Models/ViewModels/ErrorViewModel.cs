@@ -1,6 +1,6 @@
 using System;
 
-namespace Pec4._0Ligth.Models
+namespace Pec4._0Ligth.Models.ViewModels
 {
     public class ErrorViewModel
     {
